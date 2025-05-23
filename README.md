@@ -47,4 +47,19 @@ We have 0.75 accuracy, which is better than the baseline majority guessing (0.64
 
 ## Decision Tree visualization
 As the decision tree is an interpretable model, it allows us to understand how it predicts an instance and the reasoning behind its decisions by examining the explanation tree. Here is how our result looks like:
+
 ![Decision Tree](decision_tree.png)
+
+## Random Forest
+In the second part I tried to use one of the most popular black-box model to improve model accuracy. As RandomForestClassifier is ensemble model, it's hard to interpret its results without proper XAI methods which I try to apply on my next projects. Here is how I illustrate the confusion matrix and classification report:
+
+![Confusion Matrix](rf_confusion_matrix.png)
+
+              precision    recall  f1-score   support
+
+           0       0.79      0.90      0.84        99
+           1       0.76      0.58      0.66        55
+
+    accuracy                           0.79       154
+   macro avg       0.78      0.74      0.75       154
+weighted avg       0.78      0.79      0.78       154
