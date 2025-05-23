@@ -20,3 +20,6 @@ Majority class (label = 0). Since the data is imbalanced (34.9% no diabetes), we
 ## Baseline Confusion Matrix
 
 ![Confusion Matrix](baseline_confusion_matrix.png)
+
+## Confusion Matrix with predicted Decision Tree model
+![Confusion Matrix](dt_confusion_matrix.png)
