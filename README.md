@@ -17,6 +17,6 @@ Outcome:2 distinct values
 # Baseline: 
 Majority class (label = 0). Since the data is imbalanced (34.9% no diabetes), we can have a simple baseline that predicts all data points in the test set as the majority class, in this case is label 0 (no diabetes). With baseline our confusion matrix looks like this:
 
-## Confusion Matrix
+## Baseline Confusion Matrix
 
 ![Confusion Matrix](baseline_confusion_matrix.png)
