@@ -3,7 +3,7 @@ In this project I tried to predict whether the patient has diabets or not in two
 
 At first I did some EDA (exploratory data analysis) to get familiar with columns, checking the missing values.
 
-### Distinct Values per Column
+## Distinct Values per Column
 Pregnancies:17 distinct values
 Glucose:136 distinct values
 BloodPressure:47 distinct values
@@ -14,12 +14,33 @@ DiabetesPedigreeFunction:517 distinct values
 Age:52 distinct values
 Outcome:2 distinct values
 
-# Baseline: 
+## Baseline: 
 Majority class (label = 0). Since the data is imbalanced (34.9% no diabetes), we can have a simple baseline that predicts all data points in the test set as the majority class, in this case is label 0 (no diabetes). With baseline our confusion matrix looks like this:
 
-## Baseline Confusion Matrix
+## Baseline model evaluation
 
 ![Confusion Matrix](baseline_confusion_matrix.png)
 
-## Confusion Matrix with predicted Decision Tree model
+              precision    recall  f1-score   support
+
+           0       0.64      1.00      0.78        99
+           1       0.00      0.00      0.00        55
+
+    accuracy                           0.64       154
+   macro avg       0.32      0.50      0.39       154
+weighted avg       0.41      0.64      0.50       154
+
+
+## Decision Tree model evaluation
 ![Confusion Matrix](dt_confusion_matrix.png)
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.77      0.80        99
+           1       0.63      0.71      0.67        55
+
+    accuracy                           0.75       154
+   macro avg       0.73      0.74      0.73       154
+weighted avg       0.76      0.75      0.75       154
+
+We have 0.75 accuracy, which is better than the baseline majority guessing (0.64)
