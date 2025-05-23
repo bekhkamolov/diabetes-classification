@@ -3,7 +3,7 @@ In this project I tried to predict whether the patient has diabets or not in two
 
 At first I did some EDA (exploratory data analysis) to get familiar with columns, checking the missing values.
 
-## Distinct Values per Column
+## EDA
 Pregnancies:17 distinct values
 Glucose:136 distinct values
 BloodPressure:47 distinct values
