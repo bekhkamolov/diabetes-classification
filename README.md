@@ -1,5 +1,5 @@
 # Diabetes-Classification
-In this project I tried to predict whether the patient has diabets or not in two different way: using a simple interpretable model(DecisionTreeClassifier) and using black box model (RandomForestClassifier). This open source dataset consists of 8 attributes and one label column Outcome
+In this project I tried to predict whether the patient has diabetes or not in two different way: using a simple interpretable model(DecisionTreeClassifier) and using black box model (RandomForestClassifier). This open source dataset consists of 8 attributes and one label column Outcome
 
 At first I did some EDA (exploratory data analysis) to get familiar with columns, checking the missing values.
 
@@ -19,7 +19,7 @@ Majority class (label = 0). Since the data is imbalanced (34.9% no diabetes), we
 
 ## Baseline model evaluation
 
-![Confusion Matrix](baseline_confusion_matrix.png)
+![Confusion Matrix](images/baseline_confusion_matrix.png)
 
               precision    recall  f1-score   support
 
@@ -32,7 +32,7 @@ weighted avg       0.41      0.64      0.50       154
 
 
 ## Decision Tree model evaluation
-![Confusion Matrix](dt_confusion_matrix.png)
+![Confusion Matrix](images/dt_confusion_matrix.png)
 
               precision    recall  f1-score   support
 
@@ -48,12 +48,12 @@ We have 0.75 accuracy, which is better than the baseline majority guessing (0.64
 ## Decision Tree visualization
 As the decision tree is an interpretable model, it allows us to understand how it predicts an instance and the reasoning behind its decisions by examining the explanation tree. Here is how our result looks like:
 
-![Decision Tree](decision_tree.png)
+![Decision Tree](images/decision_tree.png)
 
 ## Random Forest
 In the second part I tried to use one of the most popular black-box model to improve model accuracy. As RandomForestClassifier is ensemble model, it's hard to interpret its results without proper XAI methods which I try to apply on my next projects. Here is how I illustrate the confusion matrix and classification report:
 
-![Confusion Matrix](rf_confusion_matrix.png)
+![Confusion Matrix](images/rf_confusion_matrix.png)
 
               precision    recall  f1-score   support
 
